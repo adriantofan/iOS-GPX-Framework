@@ -47,7 +47,7 @@
 @property (strong, nonatomic) GPXExtensions *extensions;
 
 /** A list of route points. */
-@property (strong, nonatomic, readonly) NSArray *routepoints;
+@property (strong, nonatomic, readonly) NSArray<GPXRoutePoint *> *routepoints;
 
 
 /// ---------------------------------
