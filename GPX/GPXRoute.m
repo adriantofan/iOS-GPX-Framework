@@ -61,7 +61,7 @@
         
         _numberValue = [self textForSingleChildElementNamed:@"number" xmlElement:element];
         _type = [self textForSingleChildElementNamed:@"type" xmlElement:element];
-        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions class] xmlElement:element];
+        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions extensionClass] xmlElement:element];
 
         NSMutableArray *array2 = [NSMutableArray array];
         [self childElementsOfClass:[GPXRoutePoint class]

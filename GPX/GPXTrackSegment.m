@@ -34,7 +34,7 @@
 {
     self = [super initWithXMLElement:element parent:parent];
     if (self) {
-        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions class] xmlElement:element];
+        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions extensionClass] xmlElement:element];
         
         NSMutableArray *array1 = [NSMutableArray array];
         [self childElementsOfClass:[GPXTrackPoint class]

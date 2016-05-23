@@ -16,8 +16,17 @@
  */
 @interface GPXExtensions : GPXElement
 
+
 @property (strong) GPXTrackPointExtensions *garminExtensions;
 @property (strong) GPXTrailsTrackExtensions *trailsTrackExtensions;
 @property (strong) GPXTrailsTrackPointExtensions *trailsTrackPointExtensions;
+
+/** Class used to check for extensions. By default it is GPXExtensions*/
+
++(Class) extensionClass;
+
+/**  Replace default extensionClass with newClass. It should be an instance of GPXExtensions. */
+
++(void) setExtensionClass:(Class)newClass;
 
 @end

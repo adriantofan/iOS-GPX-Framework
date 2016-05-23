@@ -89,7 +89,7 @@
         _positionDilutionValue = [self textForSingleChildElementNamed:@"pdop" xmlElement:element];
         _ageOfDGPSDataValue = [self textForSingleChildElementNamed:@"ageofdgpsdata" xmlElement:element];
         _DGPSidValue = [self textForSingleChildElementNamed:@"dgpsid" xmlElement:element];
-        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions class] xmlElement:element];
+        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions extensionClass] xmlElement:element];
 
         _latitudeValue = [self valueOfAttributeNamed:@"lat" xmlElement:element required:YES];
         _longitudeValue = [self valueOfAttributeNamed:@"lon" xmlElement:element required:YES];

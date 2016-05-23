@@ -80,7 +80,7 @@
                          }];
         _tracks = array3;
 
-        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions class] xmlElement:element];
+        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions extensionClass] xmlElement:element];
 
     }
     return self;

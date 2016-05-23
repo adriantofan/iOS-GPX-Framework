@@ -14,6 +14,27 @@
 @implementation GPXExtensions
 
 #pragma mark - Instance
+static Class _extensionClass;
+
++(Class) extensionClass{
+
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    if (_extensionClass == nil) {
+      _extensionClass = self;
+    }
+  });
+  return _extensionClass;
+}
+
+
++(void) setExtensionClass:(Class)newClass{
+  if([newClass isSubclassOfClass:[GPXExtensions extensionClass]]){
+    _extensionClass = newClass;
+  }else{
+    @throw([NSException exceptionWithName:@"GPXExtensions" reason:@"setExtensionClass need a GPXExtensions subclass" userInfo:nil]);
+  }
+}
 
 - (id)initWithXMLElement:(GPXXMLElement *)element parent:(GPXElement *)parent
 {

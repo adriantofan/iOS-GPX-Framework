@@ -43,7 +43,7 @@
         _timeValue = [self textForSingleChildElementNamed:@"time" xmlElement:element];
         _keyword = [self textForSingleChildElementNamed:@"keyword" xmlElement:element];
         _bounds = (GPXBounds *)[self childElementOfClass:[GPXBounds class] xmlElement:element];
-        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions class] xmlElement:element];
+        _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions extensionClass] xmlElement:element];
     }
     return self;
 }
