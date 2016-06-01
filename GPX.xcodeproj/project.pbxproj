@@ -202,6 +202,9 @@
 		AEAD62161AEE780B0057BEE5 /* GPXTrailsTrackPointExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrailsTrackPointExtensions.m; sourceTree = "<group>"; };
 		AEAD621A1AEE7A2A0057BEE5 /* GPXTrailsTrackExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXTrailsTrackExtensions.h; sourceTree = "<group>"; };
 		AEAD621B1AEE7A2A0057BEE5 /* GPXTrailsTrackExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrailsTrackExtensions.m; sourceTree = "<group>"; };
+		BF026ADB1CFEDFB500EEC689 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF026ADC1CFEDFB500EEC689 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF026ADD1CFEDFB500EEC689 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C886810919D9C943001904F0 /* GPXTrackPointExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXTrackPointExtensions.h; sourceTree = "<group>"; };
 		C886810A19D9C943001904F0 /* GPXTrackPointExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrackPointExtensions.m; sourceTree = "<group>"; };
 		DC6D135A1898453800C61325 /* libGPXLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGPXLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -560,6 +563,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = 13D46EA1152ECF2400C9A168;
 			productRefGroup = 13D46EB1152ECF2400C9A168 /* Products */;
@@ -764,6 +768,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				13D46EB9152ECF2400C9A168 /* en */,
+				BF026ADB1CFEDFB500EEC689 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				13D46ED1152ECF2400C9A168 /* en */,
+				BF026ADC1CFEDFB500EEC689 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -780,6 +786,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DC6D13C51899028100C61325 /* en */,
+				BF026ADD1CFEDFB500EEC689 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
