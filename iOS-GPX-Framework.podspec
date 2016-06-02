@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "iOS-GPX-Framework"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "The iOS framework for parsing/generating GPX files."
   s.description  = <<-DESC
                    This is a iOS framework for parsing/generating GPX files. 
